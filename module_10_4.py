@@ -53,6 +53,7 @@ class Cafe:
                         print(f'\033[32m{qi.name}\033[0m вышел(-ла) из очереди и сел(-а) за стол номер '
                               f'{table_i.number}\n', end='')
                         qi.start()
+                        continue
             end = 0
             for _ in self.tables:
                 if _.guest is None:
